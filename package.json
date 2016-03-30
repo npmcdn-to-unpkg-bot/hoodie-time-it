@@ -13,5 +13,5 @@
   },
   "dependencies": {
     "hoodie": "git://github.com/hoodiehq/hoodie#tent"
-  },
+  }
 }
