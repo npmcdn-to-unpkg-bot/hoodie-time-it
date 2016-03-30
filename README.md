@@ -1,5 +1,7 @@
 # Hoodie-time-it
 
+# THIS IS A WORK IN PROGRESS. THERE'S ABSOLUTELY NO FUNCTIONALITY YET.
+
 This is a sample application to showcase the features of the hoodie-camp release.
 
 # Setup
