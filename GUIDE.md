@@ -2,8 +2,8 @@
 
 # Requirements
 
-Requirements for developing hoodie is a non-windows machine, because I ran into problems trying to do it in Windows. 
-Your experience may differ but I had a better experience while developing on a linux machine. 
+Requirements for developing hoodie is a non-windows machine, because I ran into problems trying to do it in Windows.
+I managed to get it working just by getting rid of the hoodie-cli global package, as that is blocking the hoodie name also used by this release. Type this if you installed hoodie-cli on a global scale```npm -g uninstall hoodie-cli```else just omit the -g. 
 You'll need
 
 `node >= version 4`
