@@ -7,7 +7,7 @@ var $reset = document.querySelector('#resetMeetings')
 function loadAndRenderItems () {
 while ($content.hasChildNodes())
 {
-	$content.removeChild($content.lastChild);
+	$content.removeChild($content.lastChild)
 }
   hoodie.store.findAll().then(render)
   if (hoodie.store.isConnected())
@@ -31,14 +31,16 @@ function render(items) {
 }
 
 $create.addEventListener('click', function(){
+	var form = document.createElement('form');
 	var input = document.createElement('input');
 	input.setAttribute('type', 'text');
 	input.setAttribute('id', 'datefield');
-	$content.appendChild(input);
+	form.appendChild(input);
 	input.addEventListener('change', function(){
 		hoodie.store.add({'text': input.value});
 		this.remove();
 	});
+	$content.appendChild(form);
 });
 
 $listPending.addEventListener('click', function() {
@@ -47,6 +49,7 @@ $listPending.addEventListener('click', function() {
 
 $account.addEventListener('click', function() {
 	console.log('Account');
+	window.location = "/account.html";
 });
 
 $reset.addEventListener('click', function() {
